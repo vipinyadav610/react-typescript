@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon --watch dist --exec \"node server/index.js\"",
+    "dev:build-client": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,24 @@
   "bugs": {
     "url": "https://github.com/vipinyadav610/react-typescript/issues"
   },
-  "homepage": "https://github.com/vipinyadav610/react-typescript#readme"
+  "homepage": "https://github.com/vipinyadav610/react-typescript#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "express": "^4.16.2",
+    "npm-run-all": "^4.1.2",
+    "path": "^0.12.7",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.7.1",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
 }

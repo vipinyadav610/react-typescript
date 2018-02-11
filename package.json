@@ -23,11 +23,13 @@
     "babel-core": "^6.26.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "express": "^4.16.2",
     "npm-run-all": "^4.1.2",
     "path": "^0.12.7",
     "source-map-loader": "^0.2.3",
+    "ts-loader": "^3.5.0",
     "typescript": "^2.7.1",
     "webpack": "^3.11.0"
   },

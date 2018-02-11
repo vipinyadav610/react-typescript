@@ -1,13 +1,19 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
+        "jsx": "react",
         "module": "commonjs",
-        "target": "es5",
-        "jsx": "react"
+        "noImplicitAny": true,
+        "outDir": "./build/",
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "target": "ES5"
     },
     "include": [
         "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/browser.d.ts",
+        "typings/browser"
     ]
 }
